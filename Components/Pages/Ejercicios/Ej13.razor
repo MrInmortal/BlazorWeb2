@@ -1,0 +1,103 @@
+﻿@page "/Ej13"
+@rendermode InteractiveServer
+
+<div class="contenedor">
+    <h3>Ejercicio 13</h3>
+    <p>Construir una función que reciba como parámetro un entero y un dígito, y retorne cuántas veces se encuentra dicho dígito en el número entero.</p>
+
+    <label for="inputNumber" class="form-label">Número entero:</label>
+    <input @bind="Ingresar" type="number" class="form-control" id="inputNumber" placeholder="Ingrese un número" />
+
+    <label for="inputDigit" class="form-label">Dígito:</label>
+    <input @bind="IngresarDigito" type="number" class="form-control" id="inputDigit" placeholder="Ingrese un dígito" min="0" max="9"/>
+
+    <button class="btn-calcular" @onclick="Calcular">Calcular cantidad de dígitos</button>
+
+    @if (cantidad != null)
+    {
+        <div class="alerta-info">
+            <strong>Resultado:</strong> El dígito aparece @cantidad veces.
+        </div>
+    }
+</div>
+
+@code {
+    private int Ingresar;
+    private int IngresarDigito;
+    private int? cantidad;
+
+    private void Calcular()
+    {
+        cantidad = Contar(Ingresar, IngresarDigito);
+    }
+
+    private int Contar(int numero, int digito)
+    {
+        var digitos = numero.ToString().Select(d => int.Parse(d.ToString()));
+        return digitos.Count(d => d == digito);
+    }
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h3, p {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .btn-calcular {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.3s;
+    }
+
+        .btn-calcular:hover {
+            background: #0056b3;
+        }
+
+    .alerta-info, .alerta-advertencia {
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .alerta-info {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+
+    .alerta-advertencia {
+        background: #fff3cd;
+        color: #856404;
+    }
+</style>

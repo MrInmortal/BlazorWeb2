@@ -1,0 +1,96 @@
+﻿@page "/Ej15"
+@rendermode InteractiveServer
+
+<div class="contenedor">
+    <h3>Ejercicio 15</h3>
+    <p>Construir una función que reciba como parámetros dos números enteros y retorne 1 si el primer número es múltiplo del segundo y 0 si no.</p>
+
+    <label for="inputNumber1" class="form-label">Primer número entero:</label>
+    <input @bind="Ingresar1" type="number" class="form-control" id="inputNumber1" placeholder="Ingrese el primer número" />
+
+    <label for="inputNumber2" class="form-label">Segundo número entero:</label>
+    <input @bind="Ingresar2" type="number" class="form-control" id="inputNumber2" placeholder="Ingrese el segundo número" />
+
+    <button class="btn-calcular" @onclick="Verificar">Verificar múltiplo</button>
+
+    @if (resultado != null)
+    {
+        <div class="alerta-info">
+            <strong>Resultado:</strong> @resultado
+        </div>
+    }
+</div>
+
+@code {
+    private int Ingresar1;
+    private int Ingresar2;
+    private int? resultado;
+
+    private void Verificar()
+    {
+        resultado = Ingresar1 % Ingresar2 == 0 ? 1 : 0;
+    }
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h3, p {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .btn-calcular {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.3s;
+    }
+
+        .btn-calcular:hover {
+            background: #0056b3;
+        }
+
+    .alerta-info, .alerta-advertencia {
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .alerta-info {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+
+    .alerta-advertencia {
+        background: #fff3cd;
+        color: #856404;
+    }
+</style>

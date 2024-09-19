@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\epera\\Downloads\\Ejercicios\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Principal.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Principal.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\epera\\Downloads\\Ejercicios\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\epera\\Downloads\\Ejercicios\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\epera\\Downloads\\Ejercicios\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\epera\\Downloads\\Ejercicios\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Principal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Principal.props",
+      "PackagePath": "build\\Principal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Principal.props",
+      "PackagePath": "buildMultiTargeting\\Principal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Principal.props",
+      "PackagePath": "buildTransitive\\Principal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

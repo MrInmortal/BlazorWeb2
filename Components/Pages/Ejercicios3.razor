@@ -1,0 +1,233 @@
+﻿@page "/ejercicios"
+
+<PageTitle>Ejercicios</PageTitle>
+
+<h1>Ejercicios</h1>
+
+<p>En esta sección encontrarás todos los ejercicios impares.</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: #333;
+    }
+
+    p {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Espaciado entre las cartas */
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 18rem; /* Ajustado para las nuevas cartas */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 12rem; /* Ajustado para un buen ajuste */
+        object-fit: cover;
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="contenedor">
+    <!-- Ejercicios Imágenes y Textos -->
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 21">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 21</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un entero y retorne 1 si en dicho valor el primer dígito es igual al último.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 23">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 23</h5>
+            <p class="card-text">Construir una función que reciba como parámetro dos enteros y retorne 1 si la diferencia entre los dos valores es un número primo. Deberá retornar 0 si no es así.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 25">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 25</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un entero y un dígito menor o igual a 5 y retorne el dígito del número que se encuentre en la posición especificada por el dígito que llegó como parámetro.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 27">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 27</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un vector de 10 posiciones enteras y retorne la posición en la cual se encuentra el mayor de los datos del vector.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 29">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 29</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un vector de 10 posiciones enteras y retorne la cantidad de números que pertenecen a los 30 primeros elementos de la serie de Fibonacci.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 31">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 31</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un vector de 10 posiciones enteras y retorne el promedio entero del vector.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 33">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 33</h5>
+            <p class="card-text">Construir una función que reciba como parámetros un vector de 10 posiciones enteras y un valor entero y retorne 1 si dicho valor entero se encuentra en el vector. Deberá retornar 0 si no es así.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 35">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 35</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un vector de 10 posiciones enteras y retorne la posición en la que se encuentre el mayor número primo que termine en 3 almacenado en el vector.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 37">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 37</h5>
+            <p class="card-text">Construir una función que reciba como parámetros dos enteros, el primero actuará como base y el segundo como exponente y retorne el resultado de elevar dicha base a dicho exponente.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <!-- Nuevos Ejercicios Imágenes y Textos -->
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 39">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 39</h5>
+            <p class="card-text">Construir una función que reciba como parámetros un vector de 10 posiciones enteras y un dígito y que retorne la cantidad de veces que dicho dígito se encuentra en el vector.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 41">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 41</h5>
+            <p class="card-text">Construir una función que reciba como parámetro un vector de 10 posiciones enteras y un dígito y que retorne la cantidad de números del vector en donde dicho dígito está de penúltimo.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 43">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 43</h5>
+            <p class="card-text">Construir una función que reciba como parámetro una matriz 3x4 entera y retorne la cantidad de números primos almacenados en la matriz.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 45">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 45</h5>
+            <p class="card-text">Construir una función que reciba como parámetros una matriz 4x4 entera y un valor entero y retorne la cantidad de veces que se repite dicho valor en la matriz.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 47">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 47</h5>
+            <p class="card-text">Construir una función que reciba como parámetro una matriz 4x4 entera y retorne el número de la columna en donde se encuentre por primera vez el número mayor de la matriz.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="Ejercicio 49">
+        <div class="card-body">
+            <h5 class="card-title">Ejercicio 49</h5>
+            <p class="card-text">Construir una función que reciba una matriz 5x5 y retorne el valor de su moda. La moda de un conjunto de datos es el dato que más se repite.</p>
+            <a href="#" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+</div>
